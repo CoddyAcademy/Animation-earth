@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.line{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    /* border: 1px solid rgb(31, 110, 31); */
+    margin: 150px auto;
+    /* animation-name: sunsystem;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; */
+    animation: sunsystem 4s linear infinite forwards;
+}
+.earth{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    background-color: darkcyan;
+    background-image: url(./Без\ названия.jfif);
+    background-position: center;
+    border-radius: 50%;
+}
+@keyframes sunsystem{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
